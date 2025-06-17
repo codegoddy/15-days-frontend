@@ -27,36 +27,36 @@ const quizQuestions = [
     {
         question: "What is the capital of USA?",
         answers: [
-            {text: "New York", incorrect: false},
+            {text: "New York", correct: false},
             {text: "Washington", correct: true},
-            {text: "Chicago", incorrect: false},
+            {text: "Chicago", correct: false},
             {text: "Los Angeles", incorrect: false},
         ],
     },
     {
         question: "What is the capital of France?",
         answers: [
-            {text: "Paris", incorrect: false},
-            {text: "London", incorrect: false},
+            {text: "Paris", correct: false},
+            {text: "London", correct: false},
             {text: "Berlin", correct: true},
-            {text: "Rome", incorrect: false},
+            {text: "Rome", correct: false},
         ],
     },
     {
         question: "What is the capital of China?",
         answers: [
-            {text: "Beijing", incorrect: false},
-            {text: "Shanghai", incorrect: false},
-            {text: "Tianjin", incorrect: false},
+            {text: "Beijing", correct: false},
+            {text: "Shanghai", correct: false},
+            {text: "Tianjin", correct: false},
             {text: "Guangzhou", correct: true},
         ],
     },
     {
         question: "What is the capital of Australia?",
         answers: [
-            {text: "Sydney", incorrect: false},
-            {text: "Melbourne", incorrect: false},
-            {text: "Canberra", incorrect: false},
+            {text: "Sydney", correct: false},
+            {text: "Melbourne", correct: false},
+            {text: "Canberra", correct: false},
             {text: "Brisbane", correct: true},
         ],
     }
