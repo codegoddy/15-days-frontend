@@ -55,7 +55,7 @@ const quizQuestions = [
         question: "What is the capital of Australia?",
         answers: [
             {text: "Sydney", incorrect: false},
-            {text: "Melbourne",incorrect: false},
+            {text: "Melbourne", incorrect: false},
             {text: "Canberra", incorrect: false},
             {text: "Brisbane", correct: true},
         ],
@@ -67,7 +67,7 @@ const quizQuestions = [
 
 let currentQuestionIndex = 0;
 let score = 0;
-let answersDisabled =false;
+let answersDisabled = false;
 
 
 totalQuestionSpan.textContent = quizQuestions.length;
@@ -119,7 +119,7 @@ function showQuestion() {
 
 
 function selectAnswer(e) {
-    if(answersDisabled) return
+    if (answersDisabled) return
 
     answersDisabled = true;
 
@@ -127,13 +127,14 @@ function selectAnswer(e) {
     const isCorrect = selectedButton.dataset.correct === "true";
 
     Array.from(answerContainer.children).forEach(button => {
-        if(button.dataset.correct === 'true'){
+        if (button.dataset.correct === 'true') {
             button.classList.add("correct")
-        } else{
-            button.classList.add("incorrect")}
+        } else {
+            button.classList.add("incorrect")
+        }
     });
 
-    if(isCorrect){
+    if (isCorrect) {
         score++;
         scoreSpan.textContent = score;
     }
@@ -141,12 +142,12 @@ function selectAnswer(e) {
     setTimeout(() => {
         currentQuestionIndex++;
 
-        if(currentQuestionIndex < quizQuestions.length){
-           showQuestion()
+        if (currentQuestionIndex < quizQuestions.length) {
+            showQuestion()
         } else {
             showResults()
         }
-    },1000)
+    }, 1000)
 }
 
 function showResults() {
@@ -157,7 +158,7 @@ function showResults() {
 
     const percentage = (score / quizQuestions.length) * 100;
 
-    if(percentage === 100){
+    if (percentage === 100) {
         resultMessage.textContent = "You are a genius!";
     } else if (percentage >= 80) {
         resultMessage.textContent = "You are pretty good!";

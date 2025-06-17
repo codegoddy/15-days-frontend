@@ -67,13 +67,14 @@ body {
     margin-bottom: 10px;
 }
 
-.answer-container{
+.answer-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 25px;
 }
-.answer-btn{
+
+.answer-btn {
     background-color: #f8f0e5;
     color: #333;
     border: 2px solid #eadbc8;
@@ -83,23 +84,25 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.answer-btn:hover{
+
+.answer-btn:hover {
     background-color: #eadbc8;
     border-color: #dac0ae;
 }
 
-.answer-btn.correct{
+.answer-btn.correct {
     background-color: #e6fff0;
     color: #28a745;
     border-color: #a3f0c4;
 }
-.answer-btn.incorrect{
+
+.answer-btn.incorrect {
     background-color: #fff0f0;
     color: #ffbdbd;
     border-color: #dc3545;
 }
 
-.progress-bar{
+.progress-bar {
     height: 10px;
     background-color: #f8f0e5;
     border-radius: 5px;
@@ -107,7 +110,7 @@ body {
     margin-top: 20px;
 }
 
-.progress{
+.progress {
     height: 100%;
     background-color: #e86a33;
     width: 0%;
@@ -120,26 +123,27 @@ body {
     margin-bottom: 20px;
     font-size: 2.5rem;
 }
-.result-text{
+
+.result-text {
     background-color: #f8f0e5;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
 }
 
-.result-text p{
+.result-text p {
     font-size: 1.2rem;
     color: #333;
     margin-bottom: 1rem;
 }
 
-#result-message{
+#result-message {
     font-size: 1.5rem;
     font-weight: 600;
     color: #e86a33;
 }
 
-button{
+button {
     background-color: #e86a33;
     color: #fff;
     border: none;
@@ -148,7 +152,8 @@ button{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-button:hover{
+
+button:hover {
     background-color: #d15a2c;
 }
 
@@ -157,18 +162,23 @@ button:hover{
     .screen {
         padding: 1rem;
     }
+
     #start-screen h1 {
         font-size: 2rem;
     }
+
     #question-text {
         font-size: 1.2rem;
     }
+
     .quiz-info {
         font-size: 0.9rem;
     }
+
     .answer-btn {
         padding: 12px;
     }
+
     button {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
