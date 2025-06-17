@@ -51,6 +51,8 @@ Edit the `quizQuestions` array in `script.js`:
         ...
     ]
 }
+````
+### Customization
 Change Styling:
 Edit colors, fonts, and layout in style.css
 
@@ -61,19 +63,20 @@ javascript
 if (percentage === 100) {
     resultMessage.textContent = "Perfect!";
 }
-File Structure
-text
+### File Structure
+```text
 quiz-game/
 ├── index.html        # Main application structure
 ├── style.css         # All styling rules
 └── script.js         # Quiz logic and functionality
-Browser Support
-Browser	Support
+```
+
+### Browser Support
 Chrome	✓ Yes
 Firefox	✓ Yes
 Safari	✓ Yes
 Edge	✓ Yes
-```
+
 
 ### License
 
